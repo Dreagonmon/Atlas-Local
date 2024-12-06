@@ -47,7 +47,7 @@ actions:
 
     # Initial software
     # 7-Zip, Visual C++ Runtimes, DirectX
-  - !writeStatus: {status: 'Installing utilities'}
+  - !writeStatus: {status: 'Installing utilities', option: 'install-common-runtime'}
   - !powerShell:
     command: '.\SOFTWARE.ps1'
     exeDir: true
